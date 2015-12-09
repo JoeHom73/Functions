@@ -6,14 +6,15 @@ void brect() {
 void mousecircle(float red, float green, float blue, boolean strokeOn) {
   if (strokeOn) {
     stroke(0);
-  }else {
+  } else {
     noStroke();
   }
   fill(red, green, blue);
   ellipse(mouseX, mouseY, 30, 30);
 }
 
-void milestoKM(float mile) {
- float KM = mile/1.6;   
- return KM;
+float milestoKM(float mile) {
+  float KM = mile/1.6;
+  println(KM);
+  return KM;
 }

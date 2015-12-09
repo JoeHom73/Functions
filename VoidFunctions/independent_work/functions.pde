@@ -1,20 +1,17 @@
 
-float power (float f, float v, float t) {
-  float P= f * v * cos(t); 
-  return P; 
+float power (float f, float v, float t) { //caculate power 
+  float power= f * v * cos(t);  //power = force*velocity*costheta 
+  return power;  //return power to program 
   
 }
 
-float function (float a, float b, float c, float x) {
-   float y = sq(a*x)+(b*x)+c;
-   return y;
+float function (float a, float b, float c, float x) { //find y of a trinomial 
+   float y = sq(a*x)+(b*x)+c;  //y=sq(a*x)+(b*x)+c
+   return y; //return y to program 
 }
 
-void drawcircle ( int count, float []x, float []y) {
-     count = 600;
-x = new float [count];
-y = new float [count];
-for (int i=0; i < count; i++) {
-ellipse(x[i], y[i], 10, 10);
-}
+void drawcircle (float red, float blue, float green, float diam) { //choose the size and color of a circle 
+  noStroke();  //no outline 
+  fill(red, blue, green);  // choose color
+   ellipse(mouseX, mouseY, diam, diam); // choose diam 
 }
